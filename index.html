@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <base href="/">
+    <title>Nunez's Music Academy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/icon" href="img/nma-favicon.ico" />
+
+    <link rel="stylesheet" href="styles/main-styles.css">
+
+    <!-- 1. Load jsraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="js/shim.min.js"></script>
+    <script src="js/zone.js"></script>
+    <script src="js/Reflect.js"></script>
+    <script src="js/system.src.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/ng2-toastr.min.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+
+    <script>
+        System.import('app/main').catch(function(err) {
+            console.error(err);
+        });
+    </script>
+    <!-- libraries -->
+    <link href="lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/toastr.min.css" rel="stylesheet" />
+    <link href="lib/ng2-toastr.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="lib/theme.css" />
+	<link rel="stylesheet" type="text/css" href="lib/primeui-ng-all.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/primeui.min.css">
+
+     <!-- GMap -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO1Oim5OQbPi9tfREdtyd_dUp6zEKRoaU&jsraries=geometry,places,drawing,visualization"></script>
+    <script src="js/ng2-bs3-modal.js"></script>
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBIlEBUJKz1b1TMIoTONQcTCjbRoy7zIq4",
+        authDomain: "nma-app-b2ca8.firebaseapp.com",
+        databaseURL: "https://nma-app-b2ca8.firebaseio.com",
+        storageBucket: "",
+    };
+    firebase.initializeApp(config);
+    </script>
+</head>
+<!-- 3. Display the application -->
+
+<body>
+
+    <my-app>Loading...</my-app>
+
+    <script src="js/toastr.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/primeui-ng-all.js"></script>
+
+</body>
+
+</html>

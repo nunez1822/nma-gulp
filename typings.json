@@ -1,0 +1,13 @@
+{
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.0.0+20160602141332",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008",
+    "node": "registry:dt/node#6.0.0+20160807145350",
+    "toastr": "registry:dt/toastr#2.1.1+20160510010435"
+  },
+  "dependencies": {
+    "firebase": "registry:npm/firebase#3.0.5+20160723033700",
+    "lodash": "registry:npm/lodash#4.0.0+20160701205107"
+  }
+}

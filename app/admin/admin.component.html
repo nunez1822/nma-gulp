@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="container-fluid">
+        <div class="row">
+        <br>
+            <div class=".col-md-4 .col-md-offset-4">
+                <div class="form-inline">
+                    <div class="form-group" style="padding-right: 10px">
+                        <label for="firstName" style="padding-right: 10px">First Name</label>
+                        <input type="text" class="form-control" id="firstName"
+                            [(ngModel)]="firstName">
+                    </div>
+                    <div class="form-group" style="padding-right: 10px">
+                        <label for="lastName" style="padding-right: 10px">Last Name</label>
+                        <input type="text" class="form-control" id="lastName"
+                            [(ngModel)]="lastName"
+                            wildcard-value>
+                    </div>
+                    <button class="btn btn-default" (click)="clear()">Clear</button>
+                </div>
+            </div>
+            <div class=".col-md-4 .col-md-offset-4">
+                <h2 class="sub-header">Requests</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th style="width: 150px">FirstName</th>
+                                <th style="width: 150px">LastName</th>
+                                <th style="width: 200px">Email</th>
+                                <th style="width: 200px">Phone</th>
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let c of listOfContacts | searchByFirstName: firstName | searchByLastName: lastName" (click)="initializeSelectedContact(c)" [class.selected]="c === selectedContact" (dblclick)="showDialog()">
+                                <td>{{c.firstName}}</td>
+                                <td>{{c.lastName}}</td>
+                                <td>{{c.email}}</td>
+                                <td>{{c.phoneNumber}}</td>
+                                <td>{{c.comments}}
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p-dialog header="{{selectedContact?.firstName + ' ' + selectedContact?.lastName}}" [(visible)]="display" modal="true" responsive="true">
+    {{selectedContact?.comments}}
+</p-dialog>

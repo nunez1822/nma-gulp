@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-md-4">
+            <h1>Contact</h1>
+            <h3>School Location: </h3>
+
+            <p>1115 E Walnut Ave<br />
+            Dalton, GA 30721</p>
+
+            <h3>Phone Number:</h3>
+
+            <p>  (706) 270-4198</p>
+
+            <h3>Email: </h3>
+
+            <p>  <a href="nunez1822@yahoo.com">nunez1822@yahoo.com</a></p>
+        </div>
+        <br>
+        <div class="col-xs-12 col-sm-6 col-md-8">
+            <p-gmap [options]="options" [overlays]="overlays" [style]="{'width':'100%','height':'320px'}"
+            (onMapClick)="handleMapClick($event)" (onOverlayClick)="handleOverlayClick($event)"></p-gmap>
+            <br>
+        </div>
+    </div>
+    <div>
+        <h2>Request for More Information</h2>
+        <br>
+    </div>
+    <div class="row">
+        <form *ngIf="active" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+            <div class="form-group col-xs-4">
+                <label for="firstName">First Name</label>
+                <input [(ngModel)]="contact.firstName" name="firstName" type="text" class="form-control" id="firstName" placeholder="First Name" required>
+            </div>
+            <div class="form-group col-xs-4">
+                <label for="lastName">Last Name</label>
+                <input [(ngModel)]="contact.lastName" name="lastName" type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="form-group col-xs-4">
+                <label for="email">Email</label>
+                <input [(ngModel)]="contact.email" name="email" type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group col-xs-4">
+                <label for="phoneNumber">Phone Number</label>
+                <input [(ngModel)]="contact.phoneNumber" name="phoneNumber" type="text" class="form-control" id="phoneNumber" placeholder="Phone" required>
+            </div>
+            <div class="container" style="float: left">
+                <label for="comments">Comments</label>
+                <textarea [(ngModel)]="contact.comments" name="comments" class="form-control" rows="5" cols="50" id="comments"></textarea>
+            </div>
+            <div class="contact-submit col-xs-4">
+                <button type="submit" [disabled]="!contactForm.form.valid" class="btn btn-primary btn-lg active">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

@@ -1,0 +1,144 @@
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+  
+  body {
+    padding-top: 50px;
+  }
+
+/*=================================Footer======================================*/
+.footer-wrapper {color: white; background: #156090;}
+	footer { padding: 20px 0px 20px 0px; }
+	footer address {font-family: 'Crimson Text', serif;font-size: 18px; line-height: 22px;}
+	footer blockquote {color:#aca89e; font-size: 20px; line-height: 26px; font-family: 'Crimson Text', serif; border: none; padding: 0px; margin: 40px 0px 0px 0px;text-align:center;}
+	footer p {color:#7ad3f7; font-weight: 700; text-transform: uppercase; color: #030406; font-size: 18px;font-family: 'Source Sans Pro', sans-serif; margin: 0px 0px 20px 0px;}
+	footer .copyright {font-size: 14px;text-align:center; text-transform: none; font-weight: 400; margin: 0px; border-top: 1px solid black}
+	footer .copyright, footer .copyright a {color:black;}
+	footer .copyright a:hover {color: #fff;}
+	footer ul {list-style: none; margin: 0px; padding: 0px;font-family: 'Crimson Text', serif;font-size: 18px;}
+	footer ul li {float:left; line-height: 34px;}
+	footer ul i {color:#7ad3f7;}
+	footer ul a, footer ul a:focus  {color: #fff;}
+	footer ul a:hover {color: #7ad3f7;}
+
+#siteseal {
+	padding-top: 35px;
+	padding-left: 185px;
+}
+
+#a-custom a {color: white;}
+
+#link-custom a {color: white;}
+
+.footer-logo {
+	width: 400px; 
+	height: 200px;
+}
+
+.foot-logo-cont {
+	position: relative;
+    left: 160px;
+}
+
+.footer-contact {
+	position: relative;
+	left: 50px;
+}
+
+.footer-social {
+	position: relative;
+	left: 500px;
+	top: 20px;
+}
+
+/*==============================Contact========================================*/
+.contact-img {
+    padding-bottom: px;
+}
+
+.contact-submit {
+	padding-top:  20px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+}
+
+/*==================================Navbar======================================*/
+.nav-logo-img {
+	width: 150px; 
+	height: 65px;
+	position: relative;
+	bottom: 20;
+}
+
+#navbar1 {
+	background-color: #156090;
+	border-color: #156090;
+}
+
+#navbar1 .navbar-nav>.active>a, #navbar1 .navbar-nav>.active>a:focus, #navbar1 .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: #739cbf;
+}
+
+#navbar1 .navbar-nav > li > a {
+    color: white;
+}
+/*=====================================Carousel======================================*/
+.carousel-css {
+	background: #fcf8e3;
+}
+
+/*======================================About==========================================*/
+.about-img {
+	padding-top:  0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+	float: left;
+	width: 100px;
+	height: auto;
+}
+
+.about-info {
+	padding-top:  0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+	float: right;
+}
+
+/*Admin highlighted row*/
+.selected {
+  background-color:#dbf1c6 !important;
+  color: black;
+}
+
+#sign-in > input {
+    width: 300px;
+	height: 50px;
+}
+
+#sign-in > button {
+	width: 300px;
+}
+
+#sign-in {
+	margin: 0 auto; 
+	width:300px;
+}
+
+#sign-up > input {
+    width: 300px;
+	height: 50px;
+}
+
+#sign-up > button {
+	width: 300px;
+}
+
+#sign-up {
+	margin: 0 auto; 
+	width:300px;
+}
